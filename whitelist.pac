@@ -8,9 +8,7 @@ var ip_proxy = "DIRECT;";
  * https://github.com/breakwa11/gfw_whitelist
  */
 
-var white_domains = {"app":{
-"meeting":1
-},"am":{
+var white_domains = {"am":{
 "126":1,
 "51":1
 },"biz":{
@@ -9658,7 +9656,7 @@ function isInDomains(domain_dict, host) {
 	var pos1 = host.lastIndexOf('.');
 
 	suffix = host.substring(pos1 + 1);
-	if (suffix == "cn") {
+	if (suffix == "cn" || suffix == "app" || suffix == 'dev') {
 		return true;
 	}
 
