@@ -9,7 +9,7 @@ var ip_proxy = "DIRECT;";
  */
 
 var white_domains = {"app":{
-"*":1
+"":1
 },"am":{
 "126":1,
 "51":1
